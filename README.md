@@ -45,13 +45,7 @@ Next, install the app from your terminal
 npm install
 ```
 
-Next, create `.env` configuration file and update with your own values
-
-```
-cp .env.development .env
-```
-
-Next, run the app
+Then, run the app!
 
 ```bash
 npm run dev
@@ -71,7 +65,7 @@ You can deploy this application by [clicking here](https://vercel.com/new/clone?
 
 By default, your locally running Foo Medical app is pointing to the hosted Medplum service. Foo Medical registers signups to a test project.
 
-To send patients to your own organization you will need to [register a new Project on Medplum](https://docs.medplum.com/tutorials/app/register) and configure your app [register form component](https://docs.medplum.com/storybook/index.html?path=/docs/medplum-registerform--basic) in [src/pages/RegisterPage.tsx](https://github.com/medplum/foomedical/blob/main/src/pages/RegisterPage.tsx#L23-L29) and [src/pages/SignInPage.tsx](https://github.com/medplum/foomedical/blob/221dda547b977205cf185131f592fb937535148a/src/pages/SignInPage.tsx#L22-L26) to point to your own project.
+To send patients to your own organization you will need to [register a new Project on Medplum](https://docs.medplum.com/tutorials/app/register) and configure your environment variables to point to your own project (see [config.ts](https://github.com/medplum/foomedical/blob/main/src/config.ts) for an example).
 
 If you are using the Medplum Hosted service, you can login to your Medplum Instance and add the following identifiers to your [Project Site Settings](https://app.medplum.com/admin/sites)
 
@@ -80,7 +74,7 @@ If you are using the Medplum Hosted service, you can login to your Medplum Insta
 - Recaptcha Site Key
 - Recaptcha Secret Key
 
-Contact the medplum team ([support@medplum.com](mailto:support@medplum.com) or [Discord](https://discord.gg/UBAWwvrVeN])) with any questions.
+Contact the medplum team ([support@medplum.com](mailto:support@medplum.com) or [Discord](https://discord.gg/medplum])) with any questions.
 
 ### Data Setup
 
@@ -88,7 +82,7 @@ When you log into Foo Medical a set of sample FHIR records is created on your be
 
 ### Compliance
 
-Medplum backend is HIPAA compliant and SOC 2 certified. Getting an account set up requires registering on [medplum.com](https://www.medplum.com/). Feel free to ask us questions in real time on our [Discord Server](https://discord.gg/UBAWwvrVeN).
+Medplum backend is HIPAA compliant and SOC 2 certified. Getting an account set up requires registering on [medplum.com](https://www.medplum.com/). Feel free to ask us questions in real time on our [Discord Server](https://discord.gg/medplum).
 
 ### About Medplum
 
@@ -98,4 +92,4 @@ Medplum supports self-hosting, and provides a [hosted service](https://app.medpl
 
 - Read our [documentation](https://docs.medplum.com/)
 - Browse our [react component library](https://docs.medplum.com/storybook/index.html?)
-- Join our [Discord](https://discord.gg/UBAWwvrVeN)
+- Join our [Discord](https://discord.gg/medplum)
